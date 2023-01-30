@@ -1,0 +1,17 @@
+server:
+  port: 18081
+spring:
+  application:
+    name: ms-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/itaofei/ms-app-configs
+          password: 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
+          proxy:
+            http:
+              host: localhost
+              port: 20809
+          username: itaofeicurl
+
