@@ -1,5 +1,8 @@
 server:
-  port: 18081
+  port: 18888
+logging:
+  level:
+    root: trace
 spring:
   application:
     name: ms-config-server
@@ -8,10 +11,26 @@ spring:
       server:
         git:
           uri: https://github.com/itaofei/ms-app-configs
-          password: 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
-          proxy:
-            http:
-              host: localhost
-              port: 20809
-          username: itaofeicurl
+          username: itaofei
+          password: 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
+
+          repos:
+            team-a:
+              pattern: reg*
+              uri: https://github.com/itaofei/ms-app-reg-configs
+              clone-on-start: true
+              username: itaofei
+              password: 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
+
+
+  security:
+    user:
+      name: admin
+      password: admin1234
+encrypt:
+  key-store:
+    location: secret/ms-app-1.jks
+    alias: ms-app-key1
+    password: 123456
+    secret: 123456
 

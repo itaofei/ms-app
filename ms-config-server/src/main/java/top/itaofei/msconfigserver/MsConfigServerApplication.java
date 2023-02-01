@@ -1,4 +1,4 @@
-package itaofei.top.msconfigserver;
+package top.itaofei.msconfigserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
