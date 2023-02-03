@@ -19,6 +19,7 @@
   <properties>
     <java.version>19</java.version>
     <spring-cloud.version>2022.0.1</spring-cloud.version>
+    <openapi-version>2.0.2</openapi-version>
     <ms-app.version>0.0.1</ms-app.version>
   </properties>
 
@@ -30,6 +31,11 @@
         <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springdoc</groupId>
+        <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+        <version>${openapi-version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

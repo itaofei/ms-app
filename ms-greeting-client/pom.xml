@@ -11,31 +11,27 @@
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>ms-config-server</artifactId>
-  <version>${ms-app.version}</version>
-  <name>ms-config-server</name>
-  <description>ms-config-server</description>
+  <groupId>top.itaofei</groupId>
+  <artifactId>ms-greeting-client</artifactId>
+  <name>ms-greeting-client</name>
+  <description>ms-greeting-client</description>
   <packaging>jar</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-config-server</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-security</artifactId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
-
 
 </project>
