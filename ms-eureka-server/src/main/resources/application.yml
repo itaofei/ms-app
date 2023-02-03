@@ -1,0 +1,14 @@
+server:
+  port: 18761
+logging:
+  level:
+    root: trace
+    org.apache.tomcat.util.net: info
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

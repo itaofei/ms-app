@@ -3,6 +3,11 @@ server:
 logging:
   level:
     root: trace
+    org.apache.tomcat.util.net: info
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18761/eureka
 spring:
   application:
     name: ms-config-server

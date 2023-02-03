@@ -9,7 +9,7 @@ Spring Cloud Config具有中心化、版本控制、支持动态更新和语言�
 * 默认实现基于Git仓库(也支持SVN)，从而可以进行配置的版本管理；
 
 Spring Cloud Config的结构图：
-![123](README\img.png)
+![123](README/img.png)
 
 # 2 配置规则详解
 Config Server是如何与Git仓库中的配置文件进行匹配的呢？通常，我们会为一个项目建立类似如下的配置文件:
@@ -100,7 +100,7 @@ spring:
 
 ### 2.1.4 代理
 当Config-Server使用github访问配置库时，我们可以在`~/.git/config`下配置HTTP所使用的代理，也可以
-使用JVM系统属性`-Dhttp.proxyHost`和`-Dhttp.proxyPort`来配置。
+使用JVM系统属性`-Dhttps.proxyHost`和`-Dhttps.proxyPort`来配置。
 
 ### 2.1.5 本地缓存
 当Config-Server从Git(或SVN)中获取了配置信息后，将会在本地的文件系统中存储一份。
@@ -209,7 +209,7 @@ encrypt:
 ```xml
 <dependency>
     <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-eureka</artifactId>
+    <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 </dependency>
 ```
 
