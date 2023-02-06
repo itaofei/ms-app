@@ -16,6 +16,13 @@
   <version>0.0.1</version>
   <packaging>pom</packaging>
 
+  <modules>
+    <module>ms-config-server</module>
+    <module>ms-eureka-server</module>
+    <module>ms-greeting</module>
+    <module>ms-greeting-client</module>
+  </modules>
+
   <properties>
     <java.version>19</java.version>
     <spring-cloud.version>2022.0.1</spring-cloud.version>
