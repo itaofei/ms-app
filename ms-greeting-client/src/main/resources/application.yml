@@ -1,1 +1,13 @@
-
+server:
+  port: 19091
+logging:
+  level:
+    root: trace
+    org.apache.tomcat.util.net: info
+spring:
+  application:
+    name: CONSUMER-GREETING
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18761/eureka
