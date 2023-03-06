@@ -1,0 +1,21 @@
+
+server:
+  port: 19999
+logging:
+  level:
+    root: trace
+    org.apache.tomcat.util.net: info
+
+spring:
+  artemis:
+    mode: native
+    user: artemis
+    password: simetraehcapa
+
+    pool:
+      enabled: true
+      max-connections: 10
+    broker-url: tcp://localhost:61616
+
+
+

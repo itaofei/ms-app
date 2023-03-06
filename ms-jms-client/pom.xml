@@ -12,9 +12,9 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>top.itaofei</groupId>
-  <artifactId>ms-greeting-client</artifactId>
-  <name>ms-greeting-client</name>
-  <description>ms-greeting-client</description>
+  <artifactId>ms-jms-client</artifactId>
+  <name>ms-jms-client</name>
+  <description>ms-jms-client</description>
   <packaging>jar</packaging>
 
   <dependencies>
@@ -23,17 +23,18 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <groupId>org.springframework.shell</groupId>
+      <artifactId>spring-shell-starter</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-artemis</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <groupId>org.messaginghub</groupId>
+      <artifactId>pooled-jms</artifactId>
     </dependency>
+
 
     <dependency>
       <groupId>org.springframework.boot</groupId>

@@ -7,7 +7,7 @@ logging:
 spring:
   application:
     name: CONSUMER-GREETING
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:18761/eureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:18761/eureka
